@@ -1,153 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free WiFi & Access Map – Eden, NC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #333;
-    }
-    header {
-      background-color: #1a5d3e;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-    }
-    nav {
-      background-color: #144c33;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0.5rem 1rem;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #b6e0c1;
-    }
-    .wifi-map {
-      padding: 2rem;
-    }
-    .wifi-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      text-align: left;
-    }
-    footer {
-      background-color: #144c33;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      margin-top: 2rem;
-    }
-    iframe {
-      width: 100%;
-      height: 480px;
-      border: 0;
-      border-radius: 12px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free WiFi Access – Eden Community Resource Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
+  <!-- 🔹 HERO HEADER -->
+  <header class="hero">
     <h1>Eden Community Resource Hub</h1>
     <p>Connecting Eden, NC through Technology and Community</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="wifi-map.html">WiFi Map</a>
-      <a href="digital-literacy.html">Digital Literacy</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <small class="credit">Photo credit: Eric Waters / North Carolina Field & Family</small>
   </header>
 
-  <section class="wifi-map">
-    <h1>Free WiFi & Access Map – Eden, NC</h1>
-    <p>Use this map to find public WiFi locations in Eden, NC. These include the Eden Public Library, McDonald's, Ruby Tuesday, Eden City Hall, and Burger King — each providing free internet access for community use.</p>
+  <!-- 🔹 NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="wifi-map.html">WiFi Map</a>
+    <a href="digital-literacy.html">Digital Literacy</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <!-- 🗺️ Custom Google My Map Embed with 5 locations -->
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=12_tfO_NGgV1z1ZY7kNBNXQjLXObcslw&ehbc=2E312F" width="640" height="480"></iframe>
+  <!-- 🔹 MAIN CONTENT -->
+  <main style="max-width:1100px;margin:auto;padding:2rem;">
+    <h1>Free WiFi & Internet Access in Eden</h1>
+    <p>Explore public WiFi locations across Eden, NC — including libraries, restaurants, and community centers. These sites provide free internet to help residents stay connected.</p>
 
-    <h2 style="margin-top:2rem;">Featured WiFi Locations</h2>
-    <div class="wifi-list">
-
-      <div class="card">
-        <h3>Eden Public Library</h3>
-        <p><strong>Category:</strong> Library / Public Access</p>
-        <p><strong>Address:</strong> 598 S Pierce St, Eden, NC 27288</p>
-        <p><strong>WiFi:</strong> Free, unrestricted, strong signal indoors and outdoors.</p>
-        <p><strong>Hours:</strong> Mon–Fri 9 AM – 6 PM, Sat 9 AM – 1 PM</p>
-        <p><a href="https://goo.gl/maps/qVqTsyXfqRZKThJr8" target="_blank">View on Google Maps</a></p>
-      </div>
-
-      <div class="card">
-        <h3>McDonald's – Eden, NC</h3>
-        <p><strong>Category:</strong> Cafe / Restaurant</p>
-        <p><strong>Address:</strong> 640 S Van Buren Rd, Eden, NC 27288</p>
-        <p><strong>WiFi:</strong> Free public access, unrestricted, good speed and reliability.</p>
-        <p><strong>Hours:</strong> Open 24 hours</p>
-        <p><a href="https://goo.gl/maps/LHhRH2BoR8A2" target="_blank">View on Google Maps</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Ruby Tuesday – Eden, NC</h3>
-        <p><strong>Category:</strong> Cafe / Restaurant</p>
-        <p><strong>Address:</strong> 640 S Van Buren Rd, Eden, NC 27288</p>
-        <p><strong>WiFi Access:</strong> Unrestricted</p>
-        <p><strong>Signal & Speed:</strong> Good</p>
-        <p>Comfortable seating and consistent WiFi suitable for studying, remote work, or browsing.</p>
-        <p><a href="https://goo.gl/maps/k79DBV1ftSL2" target="_blank">View on Google Maps</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Eden City Hall</h3>
-        <p><strong>Category:</strong> Public / Government Access</p>
-        <p><strong>Address:</strong> 308 E Stadium Dr, Eden, NC 27288</p>
-        <p><strong>WiFi:</strong> Guest network available in lobby and meeting rooms.</p>
-        <p><strong>Hours:</strong> Mon–Fri 8 AM – 5 PM</p>
-        <p><a href="https://goo.gl/maps/DynkGnbixHhYHhKZ9" target="_blank">View on Google Maps</a></p>
-      </div>
-
-      <div class="card">
-        <h3>Burger King – Eden, NC</h3>
-        <p><strong>Category:</strong> Restaurant</p>
-        <p><strong>Address:</strong> 656 S Van Buren Rd, Eden, NC 27288</p>
-        <p><strong>WiFi:</strong> Free and open, reliable connection for casual use.</p>
-        <p><strong>Hours:</strong> 6 AM – 11 PM</p>
-        <p><a href="https://goo.gl/maps/PRFvEacYnVzHwEpS8" target="_blank">View on Google Maps</a></p>
-      </div>
-
+    <div style="margin-top:2rem;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+      <iframe 
+        src="https://www.google.com/maps/d/u/0/embed?mid=1JrZrBq9PUmH5xjpbF4kzFjxz8LpHgF0&ehbc=2E312F"
+        width="100%" height="480" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
     </div>
-  </section>
 
+    <section style="margin-top:2rem;">
+      <h2>Public WiFi Hotspots</h2>
+      <ul>
+        <li><strong>Eden Public Library</strong> – Free unrestricted WiFi (strong signal)</li>
+        <li><strong>McDonald’s</strong> – 640 S Van Buren Rd (unrestricted access)</li>
+        <li><strong>Ruby Tuesday</strong> – 640 S Van Buren Rd (good speed)</li>
+        <li><strong>Burger King</strong> – 656 S Van Buren Rd (guest WiFi)</li>
+        <li><strong>Eden City Hall</strong> – Guest WiFi available during business hours</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 🔹 FOOTER -->
   <footer>
-    <p>© 2025 Eden Community Resource Hub | Supported by Eden Public Library & UNCG</p>
+    <p>© 2025 Eden Community Resource Hub | Supported by Eden Public Library & UNC Greensboro</p>
+    <img src="images/uncg_logo.png" alt="UNC Greensboro Logo" />
   </footer>
 </body>
 </html>

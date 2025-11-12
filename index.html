@@ -1,48 +1,113 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Eden Community Resource Hub</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {font-family:'Open Sans',sans-serif;margin:0;background:#f8f9fa;color:#333;}
+    header.hero {
+      background:url('images/eden_river.jpg') center/cover no-repeat;
+      color:white;text-align:center;padding:6rem 1rem;
+      position:relative;
+    }
+    header.hero::after {
+      content:"";position:absolute;top:0;left:0;width:100%;height:100%;
+      background:rgba(0,0,0,0.45);z-index:0;
+    }
+    header.hero h1, header.hero p, header.hero small {
+      position:relative;z-index:1;
+    }
+    header.hero h1 {font-family:'Montserrat',sans-serif;font-size:2.5rem;margin:0;}
+    header.hero p {font-size:1.25rem;margin-top:.5rem;}
+    nav {background:#144c33;display:flex;justify-content:center;flex-wrap:wrap;padding:.5rem;}
+    nav a {color:white;text-decoration:none;margin:.5rem 1rem;font-weight:600;}
+    nav a:hover {color:#b6e0c1;}
+    section.intro {
+      text-align:center;padding:2rem 1rem;background:white;
+      box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    }
+    section.intro h2 {
+      background:#666;color:white;display:inline-block;
+      padding:.75rem 1.25rem;border-radius:8px;font-size:1.2rem;
+    }
+    .card-grid {
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:1.5rem;margin:2rem auto;max-width:1100px;padding:0 1rem;
+    }
+    .card {
+      background:white;border-radius:12px;overflow:hidden;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      transition:transform .2s ease, box-shadow .2s ease;
+      text-decoration:none;color:inherit;
+    }
+    .card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+    .card img {width:100%;height:200px;object-fit:cover;}
+    .card h3 {color:#1a5d3e;margin:1rem 0 0 0;padding:0 1rem;font-family:'Montserrat',sans-serif;}
+    .card p {padding:0 1rem 1rem 1rem;font-size:.95rem;}
+    footer {
+      background:#144c33;color:white;text-align:center;padding:1.5rem;margin-top:2rem;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+    }
+    footer img {height:50px;margin-top:.75rem;}
+    .credit {font-size:.8rem;opacity:.8;text-align:center;margin:0.5rem 0;}
+  </style>
 </head>
+
 <body>
-  <header>
+  <!-- HERO HEADER -->
+  <header class="hero">
     <h1>Eden Community Resource Hub</h1>
     <p>Connecting Eden, NC through Technology and Community</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="directory.html">Directory</a>
-      <a href="wifi-map.html">WiFi Map</a>
-      <a href="digital-literacy.html">Digital Literacy</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <small class="credit">Photo credit: Eric Waters / North Carolina Field & Family</small>
   </header>
 
-  <section class="hero">
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="directory.html">Directory</a>
+    <a href="wifi-map.html">WiFi Map</a>
+    <a href="digital-literacy.html">Digital Literacy</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- INTRO -->
+  <section class="intro">
     <h2>Empowering Eden Through Access and Connection</h2>
+    <p style="margin-top:1rem;font-size:1.1rem;">Discover resources, internet access, and digital learning opportunities designed to support every resident of Eden, North Carolina.</p>
   </section>
 
-  <section class="features">
-    <div class="card">
+  <!-- FEATURED CARDS -->
+  <section class="card-grid">
+    <a href="directory.html" class="card">
+      <img src="images/uptown_eden.jpg" alt="Downtown Eden Mural - Photo: Eric Waters / NC Field & Family" />
       <h3>Find Local Resources</h3>
-      <p>Browse essential community services from food assistance to job training programs in one place.</p>
-    </div>
-    <div class="card">
+      <p>Browse essential community services—from food assistance to job training programs—all in one place.</p>
+    </a>
+
+    <a href="wifi-map.html" class="card">
+      <img src="images/smith_river_greenway.jpg" alt="Smith River Greenway - Photo: Eric Waters / NC Field & Family" />
       <h3>Free WiFi Access</h3>
       <p>Locate nearby hotspots and public internet access points across Eden using our interactive map.</p>
-    </div>
-    <div class="card">
+    </a>
+
+    <a href="digital-literacy.html" class="card">
+      <img src="images/eden_park.jpg" alt="Governor Morehead Park - Photo: Eric Waters / NC Field & Family" />
       <h3>Learn Digital Skills</h3>
       <p>Access step-by-step guides and tutorials that help you confidently use technology every day.</p>
-    </div>
+    </a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>© 2025 Eden Community Resource Hub | Supported by Eden Public Library & UNCG</p>
+    <p>© 2025 Eden Community Resource Hub | Supported by Eden Public Library & UNC Greensboro</p>
+    <img src="images/uncg_logo.png" alt="UNC Greensboro Logo" />
   </footer>
 </body>
 </html>
